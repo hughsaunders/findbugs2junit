@@ -1,0 +1,16 @@
+language: python
+python:
+- '3.6'
+install:
+- "./install_test_requirements.sh"
+script:
+- "./runtests.sh"
+deploy:
+  provider: pypi
+  user: hughsaunders
+  password:
+    secure: NLVQDoeBhDQjDfYKZTr+Djm1m0GuALj7PmAxhXldwsTdYMYzO0m10bFKA+JMxdzCG+IQ1gg3OYAAu6Rkm4/WevmWIqLoysMvZ5UE4VuZxRNJ1jgaL6M/vj2aIs28KNSaBPulCQL8v7EFoznoPgSxHN4nhbgMgElq/L7yEzAXNHubOO2V+5obfGHVPbVlGnqbGWihg9z6oMlRI3oy9Evx5wfgTdRxchgiu4mCeN2ReqFedh+RzjGHK3wfo6/q1Slkq9ip6G+KoTKZ8oSSJwdxMiXnXDMTYaXkIH0GWM5BE1IdqrJ9nzIJzEctahJGWtdB3yb4bQkys24ieylzFWz5eWUhJaBGauJjTwua1Q6jB75NnLyCWLnSOwujJ60rHQUA+CB2hKO1nVbcWm+Jhp6bXmbQGuH/e/UCmvv+4TrQhmqjx0JyHjkZhKUa8lAuvuPsZMXWGes1RFzRrEL7bxwT/izD8fwaPpkbhrYLuyAfGcm+KbCKIs9pr1I6R66h2EO+nOaekboKViQbOsiP9U/L5dEqgunye2gl0ZDsCGiYX6Xv+LcaB8yaGWKlaurTxdhI+5efrKB9CAqCcYljS47aX9mHTGQz0kYQg3m6dQAfcQGdBdWaMFxmtzGp8s0EcluGGyMnsnP2PESJWFbo0zvThZQGKEtA+YURzroZa21CyxA=
+  on:
+    branch: master
+    python: 3.6
+  distributions: sdist bdist_wheel
