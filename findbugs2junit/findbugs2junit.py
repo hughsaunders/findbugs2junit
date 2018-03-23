@@ -28,8 +28,14 @@ def cli(infile, outfile, debug):
     for f in files:
         for b in f.findall("BugInstance"):
             classname = b.get("classname")
+            # All bugs are failures, failure is indicated by providing
+            # the presence of stderr
             tc = TestCase(
-                b.get("type"), classname, 1,
+                b.get("type"),  # name
+                classname,  # classname
+                1,  # elapsed sec
+                "",  # stdout
+                # stderr:
                 "{0} line:{1}".format(b.get("message"), b.get("lineNumber"))
             )
             test_cases.append(tc)
