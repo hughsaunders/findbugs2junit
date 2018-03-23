@@ -1,34 +1,34 @@
 <?xml version="1.0" ?>
 <testsuites disabled="0" errors="0" failures="10" tests="10" time="0.0">
 	<testsuite disabled="0" errors="0" failures="10" name="Findbugs" skipped="0" tests="10" time="0">
-		<testcase name="DM_BOXED_PRIMITIVE_FOR_PARSING">
+		<testcase classname="com.rackspace.jenkins_nodepool.Janitor" name="DM_BOXED_PRIMITIVE_FOR_PARSING">
 			<failure message="Boxing/unboxing to parse a primitive new com.rackspace.jenkins_nodepool.Janitor() line:64" type="failure"/>
 		</testcase>
-		<testcase name="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE">
+		<testcase classname="com.rackspace.jenkins_nodepool.Janitor" name="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE">
 			<failure message="Possible null pointer dereference in com.rackspace.jenkins_nodepool.Janitor.cleanNode(NodePoolSlave, String) due to return value of called method line:121" type="failure"/>
 		</testcase>
-		<testcase name="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE">
+		<testcase classname="com.rackspace.jenkins_nodepool.Janitor" name="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE">
 			<failure message="Possible null pointer dereference in com.rackspace.jenkins_nodepool.Janitor.cleanNode(NodePoolSlave, String) due to return value of called method line:122" type="failure"/>
 		</testcase>
-		<testcase name="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE">
+		<testcase classname="com.rackspace.jenkins_nodepool.Janitor" name="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE">
 			<failure message="Possible null pointer dereference in com.rackspace.jenkins_nodepool.Janitor.isMissing(NodePoolSlave) due to return value of called method line:138" type="failure"/>
 		</testcase>
-		<testcase name="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE">
+		<testcase classname="com.rackspace.jenkins_nodepool.Janitor" name="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE">
 			<failure message="Possible null pointer dereference in com.rackspace.jenkins_nodepool.Janitor.isPreviouslyUsed(NodePoolSlave) due to return value of called method line:160" type="failure"/>
 		</testcase>
-		<testcase name="SE_BAD_FIELD">
+		<testcase classname="com.rackspace.jenkins_nodepool.NodePool" name="SE_BAD_FIELD">
 			<failure message="Class com.rackspace.jenkins_nodepool.NodePool defines non-transient non-serializable instance field charset line:-1" type="failure"/>
 		</testcase>
-		<testcase name="SE_METHOD_MUST_BE_PRIVATE">
+		<testcase classname="com.rackspace.jenkins_nodepool.NodePool" name="SE_METHOD_MUST_BE_PRIVATE">
 			<failure message="The method readObject(ObjectInputStream) must be private to be invoked in serialization/deserialization of com.rackspace.jenkins_nodepool.NodePool line:122" type="failure"/>
 		</testcase>
-		<testcase name="SE_NO_SERIALVERSIONID">
+		<testcase classname="com.rackspace.jenkins_nodepool.NodePool" name="SE_NO_SERIALVERSIONID">
 			<failure message="com.rackspace.jenkins_nodepool.NodePool is Serializable; consider declaring a serialVersionUID line:73" type="failure"/>
 		</testcase>
-		<testcase name="NP_NULL_ON_SOME_PATH">
+		<testcase classname="com.rackspace.jenkins_nodepool.NodePoolComputer" name="NP_NULL_ON_SOME_PATH">
 			<failure message="Possible null pointer dereference of npn in com.rackspace.jenkins_nodepool.NodePoolComputer.setNodePoolNode(NodePoolNode) line:111" type="failure"/>
 		</testcase>
-		<testcase name="SE_NO_SERIALVERSIONID">
+		<testcase classname="com.rackspace.jenkins_nodepool.NodePoolNode" name="SE_NO_SERIALVERSIONID">
 			<failure message="com.rackspace.jenkins_nodepool.NodePoolNode is Serializable; consider declaring a serialVersionUID line:16" type="failure"/>
 		</testcase>
 	</testsuite>

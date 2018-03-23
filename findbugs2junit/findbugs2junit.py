@@ -27,7 +27,7 @@ def cli(infile, outfile, debug):
     files = root.findall("file")
     for f in files:
         for b in f.findall("BugInstance"):
-            classname = b.get("classname")
+            classname = f.get("classname")
             tc = TestCase(
                 b.get("type"),  # name
                 classname,  # classname
